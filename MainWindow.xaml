@@ -6,7 +6,7 @@
         xmlns:local="clr-namespace:ValueTB"
         mc:Ignorable="d"
         Title="ValueTB" Height="750" Width="1400"
-        MinHeight="500" MinWidth="800"
+        MinHeight="300" MinWidth="500"
         Icon='file:///C:\Users\User\Desktop\Documents\VSC\Projects\ValueTB\Media\Images\AppIcon.ico'>
     <Window.Resources>
         <Style x:Name="MainPanel" TargetType="StackPanel">
@@ -29,13 +29,41 @@
                     </TabPanel>
                 </TabItem.Header>
                 <DockPanel>
-                    <Border Width="200" Background="PaleGreen" BorderBrush="Black" BorderThickness="1" DockPanel.Dock="Left">
-                        <TextBlock Foreground="black" VerticalAlignment="Stretch"></TextBlock>
-                    </Border>
+                    <Grid x:Name="Content">
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="Auto"></ColumnDefinition>
+                            <ColumnDefinition></ColumnDefinition>
+                        </Grid.ColumnDefinitions>
+                        <Grid.RowDefinitions>
+                            <RowDefinition Height="Auto"></RowDefinition>
+                            <RowDefinition></RowDefinition>
+                        </Grid.RowDefinitions>
+                        <Border Width="200" Background="#FF98D2FB" BorderBrush="Black" BorderThickness="1" DockPanel.Dock="Left" Grid.Column="0" Grid.Row="0" Grid.RowSpan="2">
+                            <TextBlock Foreground="black" VerticalAlignment="Stretch"></TextBlock>
+                        </Border>
+                        <Border Background="White" BorderBrush="Black" BorderThickness="1" Grid.Column="1" Grid.Row="0">
+                            <Menu>
+                                <MenuItem FontSize="20">
+                                    <MenuItem.Header>
+                                        <TextBlock Text="Build" Height="29">
+                                            
+                                        </TextBlock>
+                                    </MenuItem.Header>
+                                    <MenuItem.Icon>
+                                        <Image Source="C:\Users\User\Desktop\Documents\VSC\Projects\ValueTB\Media\Images\test0.png" Margin="0,-2,-4,-2">
+                                            
+                                        </Image>
+                                    </MenuItem.Icon>
+                                </MenuItem>
+                            </Menu>
 
-                    <Border Background="White" BorderBrush="Black" BorderThickness="1">
-                        <TextBlock Foreground="black">This content fills the remaining, unallocated space.</TextBlock>
-                    </Border>
+                            <!--<TextBlock Foreground="Black" VerticalAlignment="Stretch">Test</TextBlock>-->
+                            
+                        </Border>
+                        <Border Background="White" BorderBrush="Black" BorderThickness="1" Grid.Column="1" Grid.Row="1">
+                            <TextBlock Foreground="black">This content fills the remaining, unallocated space.</TextBlock>
+                        </Border>
+                    </Grid>
                 </DockPanel>
             </TabItem>
             <TabItem Header="Settings">
