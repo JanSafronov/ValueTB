@@ -18,21 +18,19 @@
             <TabItem>
                 <TabItem.Header>
                     <TabPanel  Width="39" VerticalAlignment="Stretch" FlowDirection="LeftToRight" UseLayoutRounding="False">
-                        <Ellipse Width="10" Height="10" Fill="DarkGray"/>
-                        <TextBlock FlowDirection="LeftToRight" RenderTransformOrigin="0.5,0.5" HorizontalAlignment="Left" Width="27" Margin="2,0,0,0">
+                        <Ellipse Width="10" Height="10" Fill="DarkGray" VerticalAlignment="Stretch" HorizontalAlignment="Stretch" Margin="0,1.2,0,0"/>
+                        <TextBlock FlowDirection="LeftToRight" RenderTransformOrigin="0.5,0.5" Margin="0,0,-2,0" HorizontalAlignment="Right" Width="27"><Run Text="Main"/>
                             <TextBlock.RenderTransform>
                                 <TransformGroup>
-                                    <ScaleTransform/>
-                                    <SkewTransform AngleY="0.035"/>
-                                    <RotateTransform/>
-                                    <TranslateTransform Y="0.007"/>
+
                                 </TransformGroup>
-                            </TextBlock.RenderTransform><Run Text="Main"/></TextBlock>
+                            </TextBlock.RenderTransform>
+                        </TextBlock>
                     </TabPanel>
                 </TabItem.Header>
                 <DockPanel>
                     <Border Width="200" Background="PaleGreen" BorderBrush="Black" BorderThickness="1" DockPanel.Dock="Left">
-                        <TextBlock Foreground="black"></TextBlock>
+                        <TextBlock Foreground="black" VerticalAlignment="Stretch"></TextBlock>
                     </Border>
 
                     <Border Background="White" BorderBrush="Black" BorderThickness="1">
