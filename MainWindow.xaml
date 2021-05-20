@@ -7,7 +7,7 @@
         mc:Ignorable="d"
         Title="ValueTB" Height="750" Width="1400"
         MinHeight="500" MinWidth="800"
-        Icon='file:///C:/Users/User/Documents/VSC/Projects/ValueTB/Media/Images/AppIcon.ico'>
+        Icon='file:///C:\Users\User\Desktop\Documents\VSC\Projects\ValueTB\Media\Images\AppIcon.ico'>
     <Grid>
         <TabControl>
             <TabItem>
