@@ -41,15 +41,15 @@ name: .NET Core Desktop
 on:
   push:
     branches:
-    - main
-    - master
-    - release/*
+      - main
+      - master
+      - release/*
   pull_request:
     branches:
-    - main
-    - master
+      - main
+      - master
   schedule:
-  - cron: "0 2 ** 5-7"
+    - cron: "0 2 ** 5-7"
 
 jobs:
 
