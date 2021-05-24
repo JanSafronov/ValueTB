@@ -55,6 +55,42 @@
                                         </Image>
                                     </MenuItem.Icon>
                                 </MenuItem>
+                                <MenuItem FontSize="20">
+                                    <MenuItem.Header>
+                                        <TextBlock Text="Transfer" Height="29">
+
+                                        </TextBlock>
+                                    </MenuItem.Header>
+                                    <MenuItem.Icon>
+                                        <Image Source="C:\Users\User\Desktop\Documents\VSC\Projects\ValueTB\Media\Images\Transfer.png" Margin="0,-2,-4,-2">
+
+                                        </Image>
+                                    </MenuItem.Icon>
+                                </MenuItem>
+                                <MenuItem FontSize="20">
+                                    <MenuItem.Header>
+                                        <TextBlock Text="Script" Height="29">
+
+                                        </TextBlock>
+                                    </MenuItem.Header>
+                                    <MenuItem.Icon>
+                                        <Image Source="C:\Users\User\Desktop\Documents\VSC\Projects\ValueTB\Media\Images\Script.png" Margin="0,-2,-4,-2">
+
+                                        </Image>
+                                    </MenuItem.Icon>
+                                </MenuItem>
+                                <MenuItem FontSize="20">
+                                    <MenuItem.Header>
+                                        <TextBlock Text="Options" Height="29">
+
+                                        </TextBlock>
+                                    </MenuItem.Header>
+                                    <MenuItem.Icon>
+                                        <Image Source="C:\Users\User\Desktop\Documents\VSC\Projects\ValueTB\Media\Images\Options.png" Margin="0,-2,-4,-2">
+
+                                        </Image>
+                                    </MenuItem.Icon>
+                                </MenuItem>
                             </Menu>
 
                             <!--<TextBlock Foreground="Black" VerticalAlignment="Stretch">Test</TextBlock>-->
