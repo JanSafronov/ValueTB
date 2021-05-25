@@ -43,7 +43,7 @@
                         </Border>
                         <Border Background="White" BorderBrush="Black" BorderThickness="1" Grid.Column="1" Grid.Row="0">
                             <Menu>
-                                <MenuItem FontSize="20">
+                                <MenuItem FontSize="20" Click="MenuItem_Invoke">
                                     <MenuItem.Header>
                                         <TextBlock Text="Build" Height="29">
                                             
@@ -51,11 +51,11 @@
                                     </MenuItem.Header>
                                     <MenuItem.Icon>
                                         <Image Source="C:\Users\User\Desktop\Documents\VSC\Projects\ValueTB\Media\Images\test0.png" Margin="0,-2,-4,-2">
-                                            
+
                                         </Image>
                                     </MenuItem.Icon>
                                 </MenuItem>
-                                <MenuItem FontSize="20">
+                                <MenuItem FontSize="20" Click="MenuItem_Invoke">
                                     <MenuItem.Header>
                                         <TextBlock Text="Transfer" Height="29">
 
@@ -67,7 +67,7 @@
                                         </Image>
                                     </MenuItem.Icon>
                                 </MenuItem>
-                                <MenuItem FontSize="20">
+                                <MenuItem FontSize="20" Click="MenuItem_Invoke">
                                     <MenuItem.Header>
                                         <TextBlock Text="Script" Height="29">
 
@@ -79,7 +79,7 @@
                                         </Image>
                                     </MenuItem.Icon>
                                 </MenuItem>
-                                <MenuItem FontSize="20">
+                                <MenuItem FontSize="20" Click="MenuItem_Invoke">
                                     <MenuItem.Header>
                                         <TextBlock Text="Options" Height="29">
 
@@ -96,8 +96,32 @@
                             <!--<TextBlock Foreground="Black" VerticalAlignment="Stretch">Test</TextBlock>-->
                             
                         </Border>
-                        <Border Background="White" BorderBrush="Black" BorderThickness="1" Grid.Column="1" Grid.Row="1">
-                            <TextBlock Foreground="black">This content fills the remaining, unallocated space.</TextBlock>
+                        <Border x:Name="Build" Background="White" BorderBrush="Black" BorderThickness="1" Grid.Column="1" Grid.Row="1">
+                            <Grid Background="DarkGray" Opacity="0.5">
+                                <Grid.ColumnDefinitions>
+                                    <ColumnDefinition Width="Auto"></ColumnDefinition>
+                                </Grid.ColumnDefinitions>
+                                <Grid.RowDefinitions>
+                                    <RowDefinition Height="Auto"></RowDefinition>
+                                </Grid.RowDefinitions>
+                                <TextBlock Foreground="black" Margin="279,309,-79,-109" FontSize="40">No table or other content to display
+                                </TextBlock>
+                            </Grid>
+                        </Border>
+                        <Border x:Name="Transfer" Background="White" BorderBrush="Black" BorderThickness="1" Grid.Column="1" Grid.Row="1" Visibility="Hidden">
+                            <Grid>
+                                <TextBlock Foreground="black">his content fills the remaining, unallocated space.</TextBlock>
+                            </Grid>
+                        </Border>
+                        <Border x:Name="Script" Background="White" BorderBrush="Black" BorderThickness="1" Grid.Column="1" Grid.Row="1" Visibility="Hidden">
+                            <Grid>
+                                <TextBlock Foreground="black">This content fills the remaining, unallocated space.</TextBlock>
+                            </Grid>
+                        </Border>
+                        <Border x:Name="Options" Background="White" BorderBrush="Black" BorderThickness="1" Grid.Column="1" Grid.Row="1" Visibility="Hidden">
+                            <Grid>
+                                <TextBlock Foreground="black">This content fills the remaining, unallocated space.</TextBlock>
+                            </Grid>
                         </Border>
                     </Grid>
                 </DockPanel>

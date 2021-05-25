@@ -20,6 +20,23 @@ using System.Windows.Interop;
 using System.Windows.Diagnostics;
 using System.Windows.Converters;
 using System.Windows.Automation;
+using NUnit.Compatibility;
+using NUnit;
+using NUnit.Framework;
+using NUnit.Framework.Api;
+using NUnit.Framework.Constraints;
+using NUnit.Framework.Interfaces;
+using NUnit.Framework.Internal;
+using NUnit.Framework.Internal.Builders;
+using NUnit.Framework.Internal.Commands;
+using NUnit.Framework.Internal.Execution;
+using System.Xaml;
+using System.Xaml.Permissions;
+using System.Xaml.Schema;
+using System.Windows.Xps;
+using System.Drawing;
+using NuGet;
+using NuGet.Frameworks;
 using Microsoft.Windows.Input;
 using System.Net;
 using System.Net.Http;
@@ -32,11 +49,29 @@ namespace ValueTB
     /// </summary>
     public partial class MainWindow : Window
     {
+        /// <summary>
+        /// Initialization
+        /// </summary>
         public MainWindow()
         {
             InitializeComponent();
 
             
+        }
+
+        /// <summary>
+        /// Invoke panel visibility by menu item name
+        /// </summary>
+        /// <param name="sender">Element sender</param>
+        /// <param name="e">Routed event arguments</param>
+        private void MenuItem_Invoke(object sender, RoutedEventArgs e)
+        {
+            MenuItem mi = sender as MenuItem;
+            TextBlock tb = mi.Header as TextBlock;
+            string name = tb.Text;
+
+            Border border = FindName(name) as Border;
+            border.Visibility = Visibility.Visible;
         }
     }
 }
