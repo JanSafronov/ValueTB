@@ -8,7 +8,6 @@ Theory and code can be found on [Python](https://github.com/Pomid0rchik/Table-Al
 
 ## License
 
-
 Copyright (c) Jan Safronov, all rights reserved.
 
 Licensed under Apache 2.0
