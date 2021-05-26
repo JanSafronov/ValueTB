@@ -106,7 +106,12 @@
                                 <TextBlock Foreground="black" FontSize="40" HorizontalAlignment="Center" VerticalAlignment="Center">No table or other content to display
                                     <LineBreak></LineBreak>
                                 </TextBlock>
-                                <TextBlock Margin="0,40,0,0" HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="20" Cursor="Hand" FontWeight="Black" MouseEnter="NewProject_Cursore" MouseLeave="NewProject_Cursorl">New Project</TextBlock>
+                                <TextBlock Margin="0,40,0,0" HorizontalAlignment="Center" VerticalAlignment="Center" 
+                                           FontSize="20" Cursor="Hand" FontWeight="Black" 
+                                           MouseEnter="NewProject_Cursore" MouseLeave="NewProject_Cursorl"
+                                           MouseLeftButtonDown="TextBlock_MouseLeftButtonDown">
+                                    New Project
+                                </TextBlock>
                                 
                             </Grid>
                         </Border>

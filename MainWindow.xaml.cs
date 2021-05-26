@@ -45,7 +45,7 @@ using System.Net.Http.Headers;
 namespace ValueTB
 {
     /// <summary>
-    /// Interaction logic for MainWindow.xaml
+    /// General interaction logic for MainWindow.xaml
     /// </summary>
     public partial class MainWindow : Window
     {
@@ -82,7 +82,13 @@ namespace ValueTB
                 Resources["ItemPanel"] = name;
             }
         }
+    }
 
+    /// <summary>
+    /// Style & Decoration interaction logic for MainWindow.xaml
+    /// </summary>
+    public partial class MainWindow : Window
+    {
         /// <summary>
         /// Change style on pointer
         /// </summary>
@@ -94,10 +100,27 @@ namespace ValueTB
             tb.Foreground = Brushes.Blue;
         }
 
+        /// <summary>
+        /// Change style on pointer
+        /// </summary>
+        /// <param name="sender">Element sender</param>
+        /// <param name="e" type="Mouse Event">Routed mouse events arguments</param>
         private void NewProject_Cursorl(object sender, MouseEventArgs e)
         {
             TextBlock tb = sender as TextBlock;
             tb.Foreground = Brushes.Black;
+        }
+        
+    }
+
+    /// <summary>
+    /// Projects & Templates interaction logic for MainWindow.xaml
+    /// </summary>
+    public partial class MainWindow : Window
+    {
+        private void NewProject_Invoke(object sender, MouseButtonEventArgs e)
+        {
+            
         }
     }
 }
