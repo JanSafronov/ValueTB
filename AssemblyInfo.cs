@@ -12,11 +12,7 @@ using System.Runtime.InteropServices;
 )]
 
 /// Assembly Product Information
-[assembly: AssemblyDescription("WPF Application equipped with table management and calculation of values and transformation of data and import of various table formats")]
-[assembly: AssemblyCopyright("Copyright ©  2021")]
 [assembly: AssemblyTrademark("ValueTB™")]
 [assembly: AssemblyCulture("")]
 [assembly: AssemblyMetadata("Assembly", "build")]
 
-/// Assembly Universally Unique Identifier
-[assembly: Guid("4f6ca052-6c0d-4d7b-a712-6e5dc4598779")]

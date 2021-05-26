@@ -4,14 +4,13 @@
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:ValueTB"
+        xmlns:sys="clr-namespace:System;assembly=mscorlib"
         mc:Ignorable="d"
         Title="ValueTB" Height="750" Width="1400"
         MinHeight="300" MinWidth="500"
         Icon='file:///C:\Users\User\Desktop\Documents\VSC\Projects\ValueTB\Media\Images\AppIcon.ico'>
     <Window.Resources>
-        <Style x:Name="MainPanel" TargetType="StackPanel">
-
-        </Style>
+        <sys:String x:Key="ItemPanel">Build</sys:String>
     </Window.Resources>
     <Grid>
         <TabControl>
@@ -46,7 +45,7 @@
                                 <MenuItem FontSize="20" Click="MenuItem_Invoke">
                                     <MenuItem.Header>
                                         <TextBlock Text="Build" Height="29">
-                                            
+
                                         </TextBlock>
                                     </MenuItem.Header>
                                     <MenuItem.Icon>
@@ -62,7 +61,7 @@
                                         </TextBlock>
                                     </MenuItem.Header>
                                     <MenuItem.Icon>
-                                        <Image Source="C:\Users\User\Desktop\Documents\VSC\Projects\ValueTB\Media\Images\Transfer.png" Margin="0,-2,-4,-2">
+                                        <Image Source="C:\Users\User\Desktop\Documents\VSC\Projects\ValueTB\Media\Images\TransferB.png" Margin="0,-2,-4,-2">
 
                                         </Image>
                                     </MenuItem.Icon>
@@ -94,18 +93,21 @@
                             </Menu>
 
                             <!--<TextBlock Foreground="Black" VerticalAlignment="Stretch">Test</TextBlock>-->
-                            
+
                         </Border>
                         <Border x:Name="Build" Background="White" BorderBrush="Black" BorderThickness="1" Grid.Column="1" Grid.Row="1">
                             <Grid Background="DarkGray" Opacity="0.5">
                                 <Grid.ColumnDefinitions>
-                                    <ColumnDefinition Width="Auto"></ColumnDefinition>
+                                    <ColumnDefinition></ColumnDefinition>
                                 </Grid.ColumnDefinitions>
                                 <Grid.RowDefinitions>
-                                    <RowDefinition Height="Auto"></RowDefinition>
+                                    <RowDefinition></RowDefinition>
                                 </Grid.RowDefinitions>
-                                <TextBlock Foreground="black" Margin="279,309,-79,-109" FontSize="40">No table or other content to display
+                                <TextBlock Foreground="black" FontSize="40" HorizontalAlignment="Center" VerticalAlignment="Center">No table or other content to display
+                                    <LineBreak></LineBreak>
                                 </TextBlock>
+                                <TextBlock Margin="0,40,0,0" HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="20" Cursor="Hand" FontWeight="Black" MouseEnter="NewProject_Cursore" MouseLeave="NewProject_Cursorl">New Project</TextBlock>
+                                
                             </Grid>
                         </Border>
                         <Border x:Name="Transfer" Background="White" BorderBrush="Black" BorderThickness="1" Grid.Column="1" Grid.Row="1" Visibility="Hidden">

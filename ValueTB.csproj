@@ -6,10 +6,24 @@
     <UseWPF>true</UseWPF>
     <SignAssembly>true</SignAssembly>
     <AssemblyOriginatorKeyFile>ValueTBCert.pfx</AssemblyOriginatorKeyFile>
+    <Version>1.0.0</Version>
+    <Description>WPF desktop application equipped with table management and calculation of values and transformation of data and import of various table formats.</Description>
+    <Copyright>Jan Safronov ©</Copyright>
+    <PackageIcon>AltAppIcon.png</PackageIcon>
+    <RepositoryUrl>https://github.com/Pomid0rchik/ValueTB</RepositoryUrl>
+    <RepositoryType>Public;</RepositoryType>
+    <PackageTags>#wpf</PackageTags>
   </PropertyGroup>
 
   <ItemGroup>
     <ProjectReference Include="..\ValueTBTest\ValueTBTest.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Include="Media\Images\AltAppIcon.png">
+      <Pack>True</Pack>
+      <PackagePath></PackagePath>
+    </None>
   </ItemGroup>
 
 </Project>

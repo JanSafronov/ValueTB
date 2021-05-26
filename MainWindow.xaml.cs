@@ -63,7 +63,7 @@ namespace ValueTB
         /// Invoke panel visibility by menu item name
         /// </summary>
         /// <param name="sender">Element sender</param>
-        /// <param name="e">Routed event arguments</param>
+        /// <param name="e">Routed events arguments</param>
         private void MenuItem_Invoke(object sender, RoutedEventArgs e)
         {
             MenuItem mi = sender as MenuItem;
@@ -72,6 +72,32 @@ namespace ValueTB
 
             Border border = FindName(name) as Border;
             border.Visibility = Visibility.Visible;
+
+            string current = FindResource("ItemPanel").ToString();
+
+            if (name != current)
+            {
+                (FindName(current) as Border).Visibility = Visibility.Hidden;
+
+                Resources["ItemPanel"] = name;
+            }
+        }
+
+        /// <summary>
+        /// Change style on pointer
+        /// </summary>
+        /// <param name="sender">Element sender</param>
+        /// <param name="e">Routed mouse events arguments</param>
+        private void NewProject_Cursore(object sender, MouseEventArgs e)
+        {
+            TextBlock tb = sender as TextBlock;
+            tb.Foreground = Brushes.Blue;
+        }
+
+        private void NewProject_Cursorl(object sender, MouseEventArgs e)
+        {
+            TextBlock tb = sender as TextBlock;
+            tb.Foreground = Brushes.Black;
         }
     }
 }
