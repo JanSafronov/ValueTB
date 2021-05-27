@@ -109,7 +109,7 @@
                                 <TextBlock Margin="0,40,0,0" HorizontalAlignment="Center" VerticalAlignment="Center" 
                                            FontSize="20" Cursor="Hand" FontWeight="Black" 
                                            MouseEnter="NewProject_Cursore" MouseLeave="NewProject_Cursorl"
-                                           MouseLeftButtonDown="TextBlock_MouseLeftButtonDown">
+                                           MouseLeftButtonDown="NewProject_Invoke">
                                     New Project
                                 </TextBlock>
                                 
@@ -130,6 +130,7 @@
                                 <TextBlock Foreground="black">This content fills the remaining, unallocated space.</TextBlock>
                             </Grid>
                         </Border>
+                        <GridSplitter Height="100" Grid.RowSpan="2" Width="5"/>
                     </Grid>
                 </DockPanel>
             </TabItem>
