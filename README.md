@@ -1,4 +1,4 @@
-# WPFTable
+# WPFTables
 
 [![License](https://img.shields.io/badge/License-Apache%20License-brightgreen)](https://github.com/Pomidorka1234/ValueTB/blob/master/LICENSE)
 
